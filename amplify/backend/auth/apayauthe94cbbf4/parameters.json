@@ -1,8 +1,8 @@
 {
-    "identityPoolName": "apayauthe2d0d201_identitypool_e2d0d201",
+    "identityPoolName": "apayauthe94cbbf4_identitypool_e94cbbf4",
     "allowUnauthenticatedIdentities": false,
-    "resourceNameTruncated": "apayaue2d0d201",
-    "userPoolName": "apayauthe2d0d201_userpool_e2d0d201",
+    "resourceNameTruncated": "apayaue94cbbf4",
+    "userPoolName": "apayauthe94cbbf4_userpool_e94cbbf4",
     "autoVerifiedAttributes": [
         "email"
     ],
@@ -18,7 +18,7 @@
     "passwordPolicyMinLength": 8,
     "passwordPolicyCharacters": [],
     "requiredAttributes": [
-        "phone_number"
+        "email"
     ],
     "userpoolClientGenerateSecret": true,
     "userpoolClientRefreshTokenValidity": 30,
@@ -28,10 +28,10 @@
     "userpoolClientReadAttributes": [
         "email"
     ],
-    "userpoolClientLambdaRole": "apayaue2d0d201_userpoolclient_lambda_role",
+    "userpoolClientLambdaRole": "apayaue94cbbf4_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
-    "sharedId": "e2d0d201",
-    "resourceName": "apayauthe2d0d201",
+    "sharedId": "e94cbbf4",
+    "resourceName": "apayauthe94cbbf4",
     "authSelections": "identityPoolAndUserPool",
     "authRoleArn": {
         "Fn::GetAtt": [
@@ -47,13 +47,8 @@
     },
     "useDefault": "default",
     "usernameAttributes": [
-        "phone_number"
+        "email"
     ],
-    "triggers": "{}",
     "userPoolGroupList": [],
-    "parentStack": {
-        "Ref": "AWS::StackId"
-    },
-    "permissions": [],
     "dependsOn": []
 }

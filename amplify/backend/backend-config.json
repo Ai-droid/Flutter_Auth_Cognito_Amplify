@@ -1,9 +1,16 @@
 {
 	"auth": {
-		"apayauthe2d0d201": {
+		"apayauthe94cbbf4": {
 			"service": "Cognito",
 			"providerPlugin": "awscloudformation",
-			"dependsOn": []
+			"dependsOn": [],
+			"customAuth": false
+		}
+	},
+	"analytics": {
+		"apayauth": {
+			"service": "Pinpoint",
+			"providerPlugin": "awscloudformation"
 		}
 	}
 }

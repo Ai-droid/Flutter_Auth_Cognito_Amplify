@@ -31,7 +31,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
           MaterialButton(
             onPressed: () {
               Amplify.Auth.signOut().then((_) {
-                Navigator.pushReplacementNamed(context, '/');
+                Navigator.pushReplacementNamed(context, '/login');
               });
             },
             child: Icon(
@@ -66,4 +66,3 @@ class _DashboardScreenState extends State<DashboardScreen> {
     );
   }
 }
-

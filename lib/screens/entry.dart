@@ -32,7 +32,12 @@ class _EntryScreenState extends State<EntryScreen> {
         _amplifyConfigured = true;
       });
     } catch (e) {
-      print(e);
+        for (final err in e.exceptionList) {
+          if (err.exception == 'AmplifyAlreadyConfiguredException') {
+            ;
+            return null;
+          }
+        }
     }
   }
 
